@@ -13,7 +13,7 @@ class Auction(models.Model):
     creator = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     
     #Data de início e fim do leilão
-    start_date = models.DateTimeField(auto_now_add=true)
+    start_date = models.DateTimeField(auto_now_add=True)
     end_date = models.DateTimeField()
     
     #Indica se o leilão está ativo
