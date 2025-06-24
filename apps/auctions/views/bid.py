@@ -1,8 +1,8 @@
 from rest_framework import viewsets, permissions
 from rest_framework.exceptions import ValidationError
-from auctions.models.bid import Bid
-from auctions.models.auction import Auction
-from auctions.serializers.bid import BidSerializer
+from apps.auctions.models.bid import Bid
+from apps.auctions.models.auction import Auction
+from apps.auctions.serializers.bid import BidSerializer
 from decimal import Decimal
 from django.utils import timezone
 

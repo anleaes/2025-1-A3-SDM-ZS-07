@@ -38,8 +38,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'apps.users',
-    'apps.auctions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,8 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'apps.users',  # Custom app for user management
-    'apps.auctions',  # Custom app for auctions
+    'apps.users',
+    'apps.auctions'
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

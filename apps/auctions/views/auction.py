@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
-from auctions.models.auction import Auction
-from auctions.serializers.auction import AuctionSerializer
+from apps.auctions.models.auction import Auction
+from apps.auctions.serializers.auction import AuctionSerializer
 
 class AuctionViewSet(viewsets.ModelViewSet):
     queryset = Auction.objects.all()

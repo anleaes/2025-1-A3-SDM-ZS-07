@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from auctions.models.bid import Bid
+from apps.auctions.models.bid import Bid
 
 class BidSerializer(serializers.ModelSerializer):
     class Meta:
