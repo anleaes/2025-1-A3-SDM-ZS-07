@@ -13,7 +13,7 @@ export default function LoginScreen() {
     try {
       const success = await login(email, password);
       if (success) {
-        navigation.navigate('AuctionList'); // ajustar nome da rota conforme definido
+        navigation.navigate('Auction'); // ajustar nome da rota conforme definido
       } else {
         Alert.alert('Erro', 'Credenciais inválidas');
       }
