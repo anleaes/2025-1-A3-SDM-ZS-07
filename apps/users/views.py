@@ -22,3 +22,8 @@ class LoginView(APIView):
             serializer = UserSerializer(user)
             return Response({'user': serializer.data})
         return Response({'error': 'Credenciais inválidas'}, status=status.HTTP_401_UNAUTHORIZED)
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> features/mobile-frontend

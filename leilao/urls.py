@@ -22,4 +22,3 @@ urlpatterns = [
     path("api/users/", include("apps.users.urls")),
     path("api/auctions/", include("apps.auctions.urls")),
 ]
-
