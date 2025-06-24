@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'apps.users',  # Custom app for user management
+    'apps.auctions',  # Custom app for auctions
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
