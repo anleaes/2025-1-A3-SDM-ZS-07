@@ -8,3 +8,6 @@ class SocialNetwork(models.Model):
 
     def __str__(self):
         return f"{self.platform} de {self.user.email}"
+    class Meta:
+        verbose_name = "Rede Social"
+        verbose_name_plural = "Redes Sociais"

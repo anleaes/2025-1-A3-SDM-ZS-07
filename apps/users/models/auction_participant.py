@@ -3,7 +3,7 @@ from django.utils import timezone
 from .user import User
 
 class AuctionParticipant(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="participants")
     auction = models.ForeignKey("auctions.Auction", on_delete=models.CASCADE)
     joined_at = models.DateTimeField(default=timezone.now)
 
